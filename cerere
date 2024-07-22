@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cerere de concediu de odihna</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          line-height: 1.6;
+      }
+      .content {
+          max-width: 800px;
+          margin: auto;
+      }
+      h1 {
+          text-align: center;
+      }
+      .signature {
+          margin-top: 50px;
+      }
+      .approval {
+          margin-top: 30px;
+      }
+      .form-control {
+          width: 100%;
+          padding: 10px;
+          margin: 5px 0;
+          box-sizing: border-box;
+      }
+      .form-group {
+          margin-bottom: 15px;
+      }
+      .no-print {
+          margin-top: 20px;
+          text-align: center;
+      }
+      @media print {
+          .no-print {
+              display: none;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <p>
+        Nr. 729/
+        <input type="date" class="form-control" value="2024-06-18" />
+      </p>
+
+      <h1>Cerere de concediu de odihna</h1>
+
+      <div class="form-group">
+        <label for="name">Subsemnatul</label>
+        <input type="text" id="name" class="form-control" value="Ianc Dan Calin" />
+      </div>
+      <div class="form-group">
+        <label for="company">Angajat la SC</label>
+        <input type="text" id="company" class="form-control" value="ATMOSFERICA SRL" />
+      </div>
+      <div class="form-group">
+        <label for="position">Funcția</label>
+        <input type="text" id="position" class="form-control" value="Director Comercial" />
+      </div>
+      <p>
+        vă rog să-mi aprobați prezenta cerere prin care solicit acordarea de concediu de odihnă pentru perioada
+      </p>
+      <div class="form-group">
+        <label for="start_date">De la</label>
+        <input type="date" id="start_date" class="form-control" value="2024-06-19" />
+      </div>
+      <div class="form-group">
+        <label for="end_date">Până la</label>
+        <input type="date" id="end_date" class="form-control" value="2024-06-26" />
+      </div>
+
+      <p>Cu multumiri,</p>
+      <p>
+        Data:
+        <input type="date" class="form-control" value="2024-06-18" />
+      </p>
+      <p>
+        Nume prenume:
+        <input type="text" class="form-control" value="IANC DAN CALIN" />
+      </p>
+      <p class="signature">
+        Semnatura:
+        <input type="text" class="form-control" />
+      </p>
+
+      <div class="approval">
+        <p>Se aproba,</p>
+        <p>Administrator:</p>
+        <p>Pop Mircea Vlad</p>
+        <p class="signature">
+          Semnatura:
+          <input type="text" class="form-control" />
+        </p>
+      </div>
+
+      <div class="no-print">
+        <button onclick="window.print()">Descarcă Formularul</button>
+      </div>
+    </div>
+  </body>
+</html>
